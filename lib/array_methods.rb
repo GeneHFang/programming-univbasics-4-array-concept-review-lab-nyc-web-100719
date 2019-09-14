@@ -11,7 +11,7 @@ end
 
 def find_max_value(array)
   i = 0
-  max = -1
+  max = array[i]
   while array[i] do
     if (array[i] > max)
       max = array[i]
@@ -23,12 +23,12 @@ end
 
 def find_min_value(array)
   i = 0
-  min = 100000000
+  min = array[i]
   while array[i] do
     if (array[i] < min)
       min = array[i]
     end
     i+=1
   end
-  return max
+  return min
 end
